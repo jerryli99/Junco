@@ -1,2 +1,2 @@
 # Junco
-A small tool to help read large code base a bit faster. 
+Junco is a small bird... and a tool to help read large code bases faster. 
