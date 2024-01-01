@@ -12,10 +12,13 @@ OK.
 
 ### User Interface
 
-Use PyQT to do the job. Show directories and the files. If user selects the file, the user will be able to see a dependency graph of the file, like #include "headerfile.h" is from this location and that location, and is also in xxx.c file. See! convinent! I didn't want to make this a code editor so the user can just open their own IDE to edit the code or view details of the code. This is merely a code statistic tool.
+Show directories and the files. If user selects the file, the user will be able to see a dependency graph of the file, like #include "headerfile.h" is from this location and that location, and is also in xxx.c file. See! convinent! I didn't want to make this a code editor so the user can just open their own IDE to edit the code or view details of the code. This is merely a code statistic tool.
 
-For C++ and Python, I might add something like class stuff etc, not sure now. But for dependency graph, it shouldn't be complicated. OK.
+For C++ and Python, I might add something like class relation stuff etc, not sure now. But for dependency graph, it shouldn't be complicated. OK.
 
 ### How to do it?
 
-Well, 
+Well, I feel like doing this on local web page. GUI is fine, but I don't feel like doing it because it makes me feel a little tedious...web based stuff seems really straight forward and the point of doing this little tool is to do it in a short amount of time, so there.
+
+I will probably use flask to do it. I will use python to scan the whole code directory: scan the file names, the #includes in the files line by line, (still thinking about the function names...), then store it in a data structure, like json, and then use a library to display the graphs and statics i.e. file #include graphs, lines of code, # of functions, xxx function occured in xx,xx,xx files at line xxx, etc...using html templates to show on web.
+
